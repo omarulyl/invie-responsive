@@ -1,0 +1,131 @@
+commit d8c3a372ddc61bcf2d544a83a0e86c348c21a92b
+Author: omaru.lap <omaru.lyl@gmail.com>
+Date:   Tue Jan 3 11:26:29 2017 -0600
+
+    Integrando el menu con la portada y expandir imagen de background
+
+commit cdc212e40a3cd9f86fbcd4b74a60031b6b2b9162
+Author: omaru.lap <omaru.lyl@gmail.com>
+Date:   Tue Jan 3 11:19:19 2017 -0600
+
+    Agregando entidades dentro del invie.css en la clase menu en su etiqueta li
+
+commit 63662679804ad06bba9b15408b10ff67039c327d
+Author: omaru.lap <omaru.lyl@gmail.com>
+Date:   Tue Jan 3 10:53:11 2017 -0600
+
+    Creacion de tabla dentro de archivo precios.html y estilizandolo con css
+
+commit fd6cc5cb982bf7c628012f4005d52289917bce71
+Author: omaru.lap <omaru.lyl@gmail.com>
+Date:   Tue Jan 3 10:32:19 2017 -0600
+
+    Crecion de pagina precios.html y enlazandola con index.html dentro del menu nav
+
+commit cce23ffcaf325c918a4e70e6104d545acab7798c
+Author: omaru.lap <omaru.lyl@gmail.com>
+Date:   Tue Jan 3 10:21:29 2017 -0600
+
+    Agregando flexbox en invie.css en la parte de formulario y dando el mismo estilo a los botones
+
+commit a24f637e1120bf9c361af78d1a6ef5e431a76b69
+Author: omaru.lap <omaru.lyl@gmail.com>
+Date:   Tue Jan 3 09:43:12 2017 -0600
+
+    creacion de formulario en la parte del footer
+
+commit 693581c775e74768e64307f81336f0ac626d5798
+Author: omaru-lap <omaru.lyl@gmail.com>
+Date:   Mon Jan 2 22:43:04 2017 -0600
+
+    Inicio de footer, parte de contacto con css
+
+commit a600feb8b09fcb2ba5e593bfba3b1bd70602a6c6
+Author: omaru.lap <omaru.lyl@gmail.com>
+Date:   Mon Jan 2 14:09:05 2017 -0600
+
+    Agregando bordes redondeados en clase guitarra y etiqueta botton
+
+commit 499d2679d8354c3d63b3d2148cd6e6d479dfd35b
+Author: omaru.lap <omaru.lyl@gmail.com>
+Date:   Mon Jan 2 13:57:43 2017 -0600
+
+    positions dentro de css,implementacion en imagenes,header y menu
+
+commit 05abf9df38afe920d573b7dae3a24eebe817450c
+Author: omaru.lap <omaru.lyl@gmail.com>
+Date:   Mon Jan 2 13:18:50 2017 -0600
+
+    Agregando floats en css y ajustando imagenes y etiquetas con margenes y paddings
+
+commit d0d9d8002ec1e67108334083d44c8678a0b07fa5
+Author: omaru.lap <omaru.lyl@gmail.com>
+Date:   Mon Jan 2 12:45:08 2017 -0600
+
+    Agregando multiples clases,implementacion de etiqueta div
+
+commit 6d039c0b02f4b6f8c5f26b7f597e8d5b440cbf6c
+Author: omaru <omaru.lyl@gmail.com>
+Date:   Sat Dec 31 00:25:23 2016 -0600
+
+    Aplicando cambios al modelo de caja del poryecto (centrando contenido) en invie.css
+
+commit fbcace5d9e44685e42864c01283738c4ccada28b
+Author: omaru <omaru.lyl@gmail.com>
+Date:   Fri Dec 30 23:50:04 2016 -0600
+
+    Agregando modelo de caja margin padding border en invie.css
+
+commit 908f1010ed9d01d5b8b4c197cabf0f3b4368123d
+Author: omaru <omaru.lyl@gmail.com>
+Date:   Fri Dec 30 23:31:05 2016 -0600
+
+    Agregado elemento inlne-block dentro de invie.css
+
+commit c903988833a9d64b2fc17b5aee84d738787415ee
+Author: omaru <omaru.lyl@gmail.com>
+Date:   Fri Dec 30 23:18:18 2016 -0600
+
+    Agregando google fonts en index.html y invie.css
+
+commit f500ab6fdc9ced0254c216958251fb6c58ab4b30
+Author: omaru <omaru.lyl@gmail.com>
+Date:   Fri Dec 30 22:56:50 2016 -0600
+
+    Agregado clases a etiquetas en index  y backgounds,colores y tamaños de fuente en invie.css
+
+commit 61c23966870afb6c9c34244253efc10b1339c401
+Author: omaru <omaru.lyl@gmail.com>
+Date:   Fri Dec 30 22:09:13 2016 -0600
+
+    creacion de archivo tipo de selectores(muestra los diferentes tipos de selectores en css)
+
+commit 6b9ef3b29905305115c00369dacf66fa33585202
+Author: omaru <omaru.lyl@gmail.com>
+Date:   Fri Dec 30 21:48:46 2016 -0600
+
+    Agregando estilos .css en carpeta css
+
+commit 85cd19ff1de5eaa6873bf960ff84b6178d01a37e
+Author: omaru <omaru.lyl@gmail.com>
+Date:   Fri Dec 30 21:37:17 2016 -0600
+
+    Agregado navegacion interna dentro de los href
+
+commit d068cd2d04bce4ce320e66135327dd14c1d56244
+Author: omaru <omaru.lyl@gmail.com>
+Date:   Fri Dec 30 18:52:25 2016 -0600
+
+    Agregada carpeta de imagenes y rutas en etiqueta img
+
+commit dc5667dfe7db82995df4d4b512abef77f7073712
+Author: omaru <omaru.lyl@gmail.com>
+Date:   Fri Dec 30 18:40:24 2016 -0600
+
+    Semantica inicial de index.html
+
+commit 7fbae6bf0563511a093a081775b0cc305465a5e3
+Author: omaru <omaru.lyl@gmail.com>
+Date:   Fri Dec 30 18:01:15 2016 -0600
+
+    Archivos iniciales del proyecto

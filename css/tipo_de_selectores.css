@@ -1,0 +1,54 @@
+/*estructuras de un selector
+
+tipo de selector {
+	propiedad: valor;
+}
+
+*/
+
+/*selector universal(estilo a toda la pagina)*/
+*{
+	border: 1px solid red;
+	margin: 10px;
+}
+
+/*selector de etiqueta*/
+header{
+	background: blue;
+}
+
+section{
+	background: purple;
+
+}
+
+/*selector decendente*/
+
+article h3{
+	color: green;
+}
+
+/*selectores de clase*/
+
+.title-a{
+	background: yellow;
+}
+
+.title-b{
+	background: salmon;
+}
+
+/*selector de id*/
+
+#header{
+	border: 3px solid black;
+}
+
+#portada{
+	border: 3px solid orange;
+}
+
+#guitarras{
+	border: 3px solid brown;
+}
+

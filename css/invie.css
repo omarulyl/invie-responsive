@@ -1,0 +1,282 @@
+/*
+
+*{
+
+	-padding general-
+		padding: 10px;
+	-paddig por lados-
+		padding-top: 10px;
+		padding-left: 15px;
+		padding-right: 13px;
+		padding-bottom: 5px;
+	-paddig lados una sola linea-
+		padding: 10px 13px 5px 15px; 
+	
+	padding: 10px;
+
+	-margin general-
+		margin: 10px;
+	-margin por lados-
+		margin-top: 10px;
+		margin-left: 15px;
+		margin-right: 13px;
+		margin-bottom: 5px;
+	-margin lados una sola linea-
+		margin: 10px 13px 5px 15px; 
+	
+	margin: 10px;
+
+	border: 2px solid red;
+
+
+}*/
+
+body{
+	font-family: 'Allerta', sans-serif; /*google font allerta*/
+	margin: 0;
+}
+
+table{ /*se pone css a la etiqueta por que solo contamos con solo una tabla y no varias*/
+	width: 100%; /*distibuye el contenido al mismo tamaño que el padre (tamaño 800px)*/
+}
+
+th{
+	background: #273b47;
+	color: white;
+	padding: 10px 20px;
+	text-align: left;
+}
+
+/*th{
+	padding: 10px;
+}*/
+
+td{
+	padding:20px;
+}
+
+table, td, th{ /*agrega bordes dentro de la tabla*/ 
+	border: 1px solid #273b47;
+	border-collapse: collapse; /*junta los bordes*/
+}
+
+input, textarea{ /* quita el resaltado en los campos input y textarea */
+	outline: 0;
+}
+
+input:focus, textarea:focus{ /* agrega color de fondo al hacer focus */
+	background: lightgray;
+}
+
+
+.contenedor {
+	width: 800px;
+	margin: auto;
+	position: relative;
+}
+
+.background{
+	background-image: url('../images/background.png');
+	background-size: cover; /* expande el background buscando la mejor distribucion */
+}
+
+.titulo{
+	font-family: 'Montserrat', sans-serif; /*google font montserrat*/
+	font-size: 70px;
+	margin-bottom: 0;
+	margin-top: 70px;
+}
+
+.titulo span{ /* agregando subrayado en titulo */
+	text-decoration: underline;
+}
+.title-a{
+	font-size: 24px;
+	margin-top: 0;
+}
+
+.tittle-b{
+	font-size: 50px;
+	margin-bottom: 20px;
+}
+
+.guitarras{
+	color: #1F313C;
+	margin-bottom: 60px;
+}
+
+.guitarras h2{
+	font-family: 'Montserrat', sans-serif; /*google font montserrat*/
+	font-size: 35px;
+}
+
+.portada{
+	color: white;
+	padding: 20px;
+	height: 500px;
+}
+
+.portada button{
+	margin-bottom: 70px;
+}
+
+
+/*elementos en linea*/
+.menu {
+	font-size: 24px;
+	display: inline-block;
+	position: absolute;
+    right: 0;
+}
+
+.menu li:before { /* la indexacion se hace de manera correcta */
+   /* los elementos completan los assets en el diseño con css para tener codigo mas limpio */
+	content: '•';
+	font-size: 30px;
+	line-height: 20px;
+	color: white;
+}
+
+.menu li{
+	display: inline-block;
+	margin-left: 30px;
+}
+
+.menu a{
+	color: white;
+	text-decoration: none;
+}
+
+.logotipo {
+	display: inline-block;
+	margin-left: 0;
+}
+/*----------------*/
+
+.guitarra {
+	margin: 10px 10px 30px 10px;
+	padding: 10px; /*borde inerior*/
+/*	overflow: hidden;*/	
+	border: 1px solid #1F313C;
+	border-radius: 8px;
+}
+
+.guitarra ol{
+	padding: 0;
+}
+
+.derecha {
+	float: right;
+	position: relative;/*position absolute,fixed,relative*/
+	top: -105px;
+}
+
+.izquierda {
+	float: left;
+	position: relative;/*position absolute,fixed,relative*/
+	top: -8px;
+}
+
+.contenedor-guitarra-a{
+	padding-left: 20px;
+}
+
+.contenedor-guitarra-b{
+	margin-left: 370px; 
+	position: relative;
+}
+
+.header {
+  position: relative;
+}
+
+.button {
+	border-radius: 12px;
+	border: none;
+	color: white;
+	text-decoration: none;
+	padding: 7px 12px;
+	cursor: pointer;
+	font-size: 18px;
+	
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f85032+0,f16f5c+50,f6290c+51,f02f17+71,e73827+100;Red+Gloss+%231 */
+	background: #f85032; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f85032 0%, #f16f5c 50%, #f6290c 51%, #f02f17 71%, #e73827 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #f85032 0%,#f16f5c 50%,#f6290c 51%,#f02f17 71%,#e73827 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #f85032 0%,#f16f5c 50%,#f6290c 51%,#f02f17 71%,#e73827 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827',GradientType=0 ); /* IE6-9 */
+
+/* 	background: #fd324e;
+	background: linear-gradient(to left, #fe344e, #ff7250)
+ */}
+
+.footer{
+	background: #273b47;
+	padding: 50px 10px;
+
+}
+
+.footer .contenedor{
+	display: flex; /*acomoda a los hijo o cajas en vertical*/
+	justify-content: space-between; /*ingresa un espacio entre hijos o cajas*/
+}
+
+.contacto{
+	display: flex;/*acomoda a los hijo o cajas en vertical*/
+	width: 300px; /*se asigna un tamaño a la caja*/ 
+	flex-wrap: wrap; /*baja los elementos*/
+	align-items: center; /*evita que el contenido se distorcione*/
+}
+
+.contacto img{
+	display: block;
+}
+
+.contacto strong{
+	display: block;
+}
+
+.contacto a{
+	color: white;
+	text-decoration: none;
+	margin: 10px 10px 10px 0;
+}
+
+.formulario{
+	display: flex;
+	width: 400px;
+	color: white;
+}
+
+.col1, .col2{ /*estilos iguales a dos clases diferentes*/
+	display: flex;
+	flex-direction: column; /*distibuye los elementos por el tamaño de la columna*/
+}
+
+.col1{
+	margin-right: 15px;
+}
+
+.col2{
+	align-items: flex-start;
+}
+
+.col2 .button{
+	margin-top: 15px;
+}
+
+.intereses label{
+	font-size: 12px;
+}
+
+.formulario label, .sexo, .intereses{
+	margin-bottom: 10px;
+}
+
+.sexo{
+	margin-top: 10px;
+}
+
+.tabla{
+	margin: 50px 0;
+}

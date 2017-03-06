@@ -10,8 +10,8 @@
 		padding-right: 13px;
 		padding-bottom: 5px;
 	-paddig lados una sola linea-
-		padding: 10px 13px 5px 15px; 
-	
+		padding: 10px 13px 5px 15px;
+
 	padding: 10px;
 
 	-margin general-
@@ -22,8 +22,8 @@
 		margin-right: 13px;
 		margin-bottom: 5px;
 	-margin lados una sola linea-
-		margin: 10px 13px 5px 15px; 
-	
+		margin: 10px 13px 5px 15px;
+
 	margin: 10px;
 
 	border: 2px solid red;
@@ -55,7 +55,7 @@ td{
 	padding:20px;
 }
 
-table, td, th{ /*agrega bordes dentro de la tabla*/ 
+table, td, th{ /*agrega bordes dentro de la tabla*/
 	border: 1px solid #273b47;
 	border-collapse: collapse; /*junta los bordes*/
 }
@@ -156,7 +156,7 @@ input:focus, textarea:focus{ /* agrega color de fondo al hacer focus */
 .guitarra {
 	margin: 10px 10px 30px 10px;
 	padding: 10px; /*borde inerior*/
-/*	overflow: hidden;*/	
+/*	overflow: hidden;*/
 	border: 1px solid #1F313C;
 	border-radius: 8px;
 }
@@ -182,7 +182,7 @@ input:focus, textarea:focus{ /* agrega color de fondo al hacer focus */
 }
 
 .contenedor-guitarra-b{
-	margin-left: 370px; 
+	margin-left: 370px;
 	position: relative;
 }
 
@@ -198,7 +198,7 @@ input:focus, textarea:focus{ /* agrega color de fondo al hacer focus */
 	padding: 7px 12px;
 	cursor: pointer;
 	font-size: 18px;
-	
+
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f85032+0,f16f5c+50,f6290c+51,f02f17+71,e73827+100;Red+Gloss+%231 */
 	background: #f85032; /* Old browsers */
 	background: -moz-linear-gradient(top,  #f85032 0%, #f16f5c 50%, #f6290c 51%, #f02f17 71%, #e73827 100%); /* FF3.6-15 */
@@ -223,7 +223,7 @@ input:focus, textarea:focus{ /* agrega color de fondo al hacer focus */
 
 .contacto{
 	display: flex;/*acomoda a los hijo o cajas en vertical*/
-	width: 300px; /*se asigna un tamaño a la caja*/ 
+	width: 300px; /*se asigna un tamaño a la caja*/
 	flex-wrap: wrap; /*baja los elementos*/
 	align-items: center; /*evita que el contenido se distorcione*/
 }
@@ -279,4 +279,12 @@ input:focus, textarea:focus{ /* agrega color de fondo al hacer focus */
 
 .tabla{
 	margin: 50px 0;
+}
+
+/*Segunda forma de agregar media queries */
+@media screen and (max-width: 800px){
+	body{
+		background: peru;
+		border: 15px solid lightblue;
+	}
 }

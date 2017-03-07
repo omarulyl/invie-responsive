@@ -70,7 +70,7 @@ input:focus, textarea:focus{ /* agrega color de fondo al hacer focus */
 
 
 .contenedor {
-	width: 800px;
+	max-width: 800px;
 	margin: auto;
 	position: relative;
 }
@@ -282,9 +282,72 @@ input:focus, textarea:focus{ /* agrega color de fondo al hacer focus */
 }
 
 /*Segunda forma de agregar media queries */
+/*------------------------Tabletas---------------------------------------------*/
 @media screen and (max-width: 800px){
-	body{
-		background: peru;
-		border: 15px solid lightblue;
+	/*.contenedor{
+		width: auto;
+		max-width: 800px;
+	}*/
+	/*body{
+		border: 10px solid red;
+	}*/
+	/* Portada */
+	.titulo{
+		font-size: 45px;
+		margin-top: 30px;
 	}
+
+	.title-a{
+		font-size: 18px;
+	}
+
+	.portada{
+		height: auto;
+	}
+
+	.portada .button{/*los elementos display inline no tienen margenes tomar en cuenta y cambiar por inline-block */
+		margin-bottom: 30px;
+		display: inline-block;
+	}
+	/* Portada */
+
+	/*Guitarras*/
+	.guitarras{
+		/*border: 1px solid red;*/
+		text-align: center;
+
+	}
+
+	.izquierda, .derecha{
+		float: none;
+		position: static;
+	}
+
+	.tittle-b{
+		margin: 0;
+	}
+
+	.guitarra li{
+		list-style: none;
+	}
+
+	.guitarras h3{
+		font-size: 25px;
+	}
+
+	.guitarra.b{
+		height: auto;
+	}
+
+	.contenedor-guitarra-b{
+		position: static;
+		margin: 0;
+	}
+
+	.footer{
+		padding: 50px 25px;
+	}
+	/*Guitarras*/
+
 }
+/*------------------------Tabletas---------------------------------------------*/

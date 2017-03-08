@@ -555,3 +555,26 @@ input:focus, textarea:focus{ /* agrega color de fondo al hacer focus */
 	/*Guitarras*/
 
 }
+/*
+Video con html + responsive
+video{
+	width: 100%;
+}
+*/
+
+/*video iframe de youtube responsivo*/
+.video-responsive-contenedor{
+	position: relative;
+	padding-top: 56.25%; /*video en formato 19:9 ejemplo video de 560x315 =(315 * 100)/560 =56.25%  */
+}
+
+.video-responsive-src{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+}
+/*video iframe de youtube responsivo*/

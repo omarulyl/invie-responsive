@@ -44,7 +44,7 @@
 	 <section id="guitarras" class="guitarras contenedor"> <!-- guitarras -->
 	 	<h2>Nuestras guitarras</h2><!-- titulo -->
 		<article class="guitarra"><!-- guitarra1 -->
-			<img class="derecha" src="images/invie-acustica.png" width="250" alt="Guitarra Acuistica" />
+			<img class="derecha" data-src="images/invie-acustica.png" width="250" alt="Guitarra Acuistica" />
 			<div class="contenedor-guitarra-a">
 				<h3 class="title-b">Invie Acústica</h3>
 				<ol>
@@ -55,7 +55,7 @@
 			</div>
 		</article>
 		<article class="guitarra"><!-- guitarra2 -->
-			<img class="izquierda" src="images/invie-classic.png" width="300" alt="Guitarra Clasica" />
+			<img class="izquierda" data-src="images/invie-classic.png" width="300" alt="Guitarra Clasica" />
 			<div class="contenedor-guitarra-b" >
 			<h3 class="title-b">Invie Clasica</h3>
 				<ol>
@@ -69,7 +69,7 @@
 	<footer class="footer"> <!-- footer -->
 		<div class="contenedor">
 			<div class="contacto">
-				<img src="images/invie-white.png" alt="logotipo blanco"> <!-- img -->
+				<img data-src="images/invie-white.png" alt="logotipo blanco"> <!-- img -->
 				<a href="tel:+7555665555"><strong>Telefono</strong><span>45548433115</span></a>
 				<a href="mailto:contacto@invie.com"><strong>Email</strong><span>contacto@invie.com</span></a>
 			</div>
@@ -110,6 +110,7 @@
 			</form>
 		</div>
 	</footer>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.js"></script>
 	<script type="text/javascript">
 		var consulta = window.matchMedia('(max-width: 500px)');
 		consulta.addListener(mediaQuery);
@@ -118,7 +119,6 @@
 		var $menu = document.getElementById('menu');
 
 		$burguerButton.addEventListener('touchstart',toggleMenu);
-		
 		
 		function toggleMenu(){
 			$menu.classList.toggle('active');
@@ -140,9 +140,11 @@
 
 		mediaQuery();
 
-
-
-
+		// Lazy loading
+		var blazy = new Blazy({
+			selector: 'img'
+		});
+		
 	</script>
 </body>
 </html>

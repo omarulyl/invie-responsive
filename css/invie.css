@@ -242,6 +242,11 @@ input:focus, textarea:focus{ /* agrega color de fondo al hacer focus */
 	margin: 10px 10px 10px 0;
 }
 
+.footer .contenedor {
+  display: flex;
+  justify-content: space-between;
+}
+
 .formulario{
 	display: flex;
 	width: 400px;
@@ -258,7 +263,7 @@ input:focus, textarea:focus{ /* agrega color de fondo al hacer focus */
 }
 
 .col2{
-	align-items: flex-start;
+		align-items: flex-start;
 }
 
 .col2 .button{
@@ -343,11 +348,128 @@ input:focus, textarea:focus{ /* agrega color de fondo al hacer focus */
 		position: static;
 		margin: 0;
 	}
+	.contenedor-guitarra-a{
+		padding: 0;
+	}
 
-	.footer{
-		padding: 50px 25px;
+	/*Guitarras*/
+
+
+
+}
+/*------------------------Tabletas---------------------------------------------*/
+
+@media screen and (max-width: 767px){
+/*Footer*/
+	.footer .contenedor{
+		display: block;
+	}
+
+	.contacto{
+		margin: 0 auto;
+	}
+
+	.formulario{
+		display: block;
+		margin: 0 auto;
+		width: 300px;
+	}
+
+	.intereses label{
+		display: block;
+		font-size: 16px;
+	}
+
+	.col1{
+		margin: 0;
+	}
+
+	.col2{
+		margin-right: 25px;
+	}
+
+	/*selector de atributo*/
+	input[type="text"],
+	input[type="email"]{
+		font-size: 16px;
+		padding: 5px;
+	}
+
+	input[type="radio"],
+	input[type="checkbox"]{
+		zoom: 1.5; 
+	}	
+	/*selector de atributo*/
+
+	textarea{
+		width: 100%;
+	}
+
+/*Footer*/
+}
+
+
+/*------------------------Moviles---------------------------------------------*/
+@media screen and (max-width: 650px){
+
+	.header{
+		text-align: center;
+	}
+
+	.logotipo{
+		margin: 0;
+	}
+
+	.menu{
+	  /*border: 1px solid red;*/
+		position: static;
+		display: block;
+	}
+
+	.menu li:first-child{
+		margin: 0;
+	}
+
+	.menu ul{
+		padding: 0;
+	}
+
+
+}
+
+@media screen and (max-width: 500px){
+	/* Portada */
+	.menu li{
+		display: block;
+		margin: 0;
+		padding: 8px 0;
+		border-bottom: 1px solid white;
+	}
+
+	.menu li:before{
+		display: none;
+	}
+
+	.menu li:first-child{
+		border-top: 1px solid white;
+	}
+
+	.portada{
+		text-align: center;
+	}
+
+	.titulo{
+		font-size: 30px;
+	}
+
+	.title{
+		font-size: 16px;
+	}
+	/* Portada */
+	/*Guitarras*/
+	.guitarra img{
+		width: 200px;
 	}
 	/*Guitarras*/
 
 }
-/*------------------------Tabletas---------------------------------------------*/

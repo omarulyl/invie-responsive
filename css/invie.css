@@ -1,3 +1,44 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?griwja');
+  src:  url('../fonts/icomoon.eot?griwja#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?griwja') format('truetype'),
+    url('../fonts/icomoon.woff?griwja') format('woff'),
+    url('../fonts/icomoon.svg?griwja#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-phone:before {
+  content: "\e942";
+}
+.icon-envelop:before {
+  content: "\e945";
+}
+.icon-menu:before {
+  content: "\e9bd";
+}
+.icon-close:before {
+  content: "\ea0d";
+}
+
+
+
 /*
 
 *{
@@ -286,6 +327,21 @@ input:focus, textarea:focus{ /* agrega color de fondo al hacer focus */
 	margin: 50px 0;
 }
 
+.burguer-button{
+	width: 40px;
+	border-radius: 50%;
+	line-height: 40px;
+	height: 40px;
+	background: #395667;
+	display: inline-block;
+	text-align: center;
+	cursor: pointer;
+	position: absolute;
+	left: 20px;
+	top: 20px;
+	z-index: 3;
+}
+
 /*Segunda forma de agregar media queries */
 /*------------------------Tabletas---------------------------------------------*/
 @media screen and (max-width: 800px){
@@ -439,6 +495,32 @@ input:focus, textarea:focus{ /* agrega color de fondo al hacer focus */
 
 @media screen and (max-width: 500px){
 	/* Portada */
+	.portada .contenedor{
+		position: static;
+	}
+
+	.menu{
+		
+		background: rgba(255, 60, 88, .8);
+		position: absolute;
+		left: -100%;
+		top: 0;
+		z-index: 2;
+		bottom: 0;
+		right: 0;
+		display: flex;
+		width: 100%;
+		align-items: center;
+		transition: .3s;
+
+	}
+
+	.menu.active{
+		left: 0;
+	}
+	.menu ul{
+		flex: 1;
+	}
 	.menu li{
 		display: block;
 		margin: 0;

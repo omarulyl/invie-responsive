@@ -117,6 +117,7 @@ input:focus, textarea:focus{ /* agrega color de fondo al hacer focus */
 }
 
 .background{
+	background-color: #466173;/*color de fondo por si la imagen no carga rapido*/
 	background-image: url('../images/background.png');
 	background-size: cover; /* expande el background buscando la mejor distribucion */
 }
@@ -596,3 +597,9 @@ video{
 	height: 100%; 
 }
 /*segunda forma de insertar video de youtube desde embedresponsively.com */
+/*media querie para resoluciones retina display para safari,chrome,opera = webkit , para edge = ms*/
+@media screen and (-webkit-min-device-pixel-ratio: 2){
+	.background{
+		background-image: url('../images/background2x.png');
+	}
+}

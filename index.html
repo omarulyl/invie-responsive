@@ -121,6 +121,7 @@
 		</div>
 	</footer>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.js"></script>
 	<script type="text/javascript">
 		var consulta = window.matchMedia('(max-width: 500px)');
 		consulta.addListener(mediaQuery);
@@ -131,9 +132,16 @@
 		$burguerButton.addEventListener('touchstart',toggleMenu);
 		
 		function toggleMenu(){
-			$menu.classList.toggle('active');
+			$menu.classList.add('active');
 		};
 
+		function showMenu(){
+			$menu.classList.remove('active');
+		};
+
+		function hideMenu(){
+			$menu.classList.toggle('active');
+		};
 		function mediaQuery(){
 			if (consulta.matches){
 				console.log('Se cumplio la condicion');
@@ -150,10 +158,20 @@
 
 		mediaQuery();
 
-		// Lazy loading
+		/*Lazy loading*/
 		var blazy = new Blazy({
 			selector: 'img'
 		});	
+        /*Lazy loading*/
+        
+        /*Eventos touch con hammer js*/
+        var $body = document.body;
+
+		var gestos = new Hammer($body);
+		gestos.on('swipeleft', showMenu);
+
+		gestos.on('swiperight', hideMenu);
+	    /*Eventos touch con hammer js*/
 	</script>
 </body>
 </html>

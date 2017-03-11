@@ -340,6 +340,7 @@ input:focus, textarea:focus{ /* agrega color de fondo al hacer focus */
 	position: absolute;
 	left: 20px;
 	top: 20px;
+	color: white;
 	z-index: 3;
 }
 
@@ -354,6 +355,15 @@ input:focus, textarea:focus{ /* agrega color de fondo al hacer focus */
 		border: 10px solid red;
 	}*/
 	/* Portada */
+	/*precios */
+	.tabla{
+		margin: 50px 20px;
+	}
+	.tabla .contenedor{
+		overflow: auto;
+		border: 1px solid #273b47;
+	}
+	/*precios */
 	.titulo{
 		font-size: 45px;
 		margin-top: 30px;
@@ -498,6 +508,15 @@ input:focus, textarea:focus{ /* agrega color de fondo al hacer focus */
 	/* Portada */
 	.portada .contenedor{
 		position: static;
+	}
+
+	.header{
+		position: static;
+	}
+
+	.header .contenedor{
+		position: static;
+
 	}
 
 	.menu{

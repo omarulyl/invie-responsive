@@ -45,13 +45,20 @@
 	 	<h2>Nuestras guitarras</h2><!-- titulo -->
 	 	<!--video insertado por html-->
 	<!--<video src="video/320x240.ogg"></video>-->
-	<!--	<div class="video-responsive-contenedor">
-			<iframe class="video-responsive-src" width="560" height="315" src="https://www.youtube.com/embed/R1dW8M4EqYY" frameborder="0" allowfullscreen></iframe>
-		</div>-->
+    <!-- <div class="video-demo">
+			<div class="video-responsive-contenedor">
+				<iframe class="video-responsive-src" width="560" height="315" src="https://www.youtube.com/embed/R1dW8M4EqYY" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div> -->
 		<!--video insertado por http://embedresponsively.com/-->
-		<div class='embed-container'>
-			<iframe src='https://www.youtube.com/embed/R1dW8M4EqYY' frameborder='0' allowfullscreen></iframe>
+		<div class="video-demo-contenedor">
+			<div class="video-demo">
+				<div class='embed-container'>
+					<iframe src='https://www.youtube.com/embed/R1dW8M4EqYY' frameborder='0' allowfullscreen></iframe>
+				</div>
+			</div>			
 		</div>
+
 	 	
 		<article class="guitarra"><!-- guitarra1 -->
 			<img class="derecha" data-src="images/invie-acustica.png|images/invie-acustica2x.png" width="250" alt="Guitarra Acuistica" />
@@ -128,34 +135,27 @@
 		
 		var $burguerButton = document.getElementById('burguer-button');
 		var $menu = document.getElementById('menu');
-
-		$burguerButton.addEventListener('touchstart',toggleMenu);
-		
+	
 		function toggleMenu(){
-			$menu.classList.add('active');
+			$menu.classList.toggle('active');
 		};
 
 		function showMenu(){
-			$menu.classList.remove('active');
+			$menu.classList.add('active');
 		};
 
 		function hideMenu(){
-			$menu.classList.toggle('active');
+			$menu.classList.remove('active');
 		};
 		function mediaQuery(){
 			if (consulta.matches){
 				console.log('Se cumplio la condicion');
-
 				$burguerButton.addEventListener('touchstart',toggleMenu);
-
 		    }else{
-
 		    	$burguerButton.removeEventListener('touchstart',toggleMenu);
 				console.log('No se cumplio la condicion');
 		    }
-		
 		}
-
 		mediaQuery();
 
 		/*Lazy loading*/
@@ -168,9 +168,8 @@
         var $body = document.body;
 
 		var gestos = new Hammer($body);
-		gestos.on('swipeleft', showMenu);
-
-		gestos.on('swiperight', hideMenu);
+		gestos.on('swipeleft', hideMenu);
+		gestos.on('swiperight', showMenu);
 	    /*Eventos touch con hammer js*/
 	</script>
 </body>

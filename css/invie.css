@@ -450,12 +450,25 @@ input:focus, textarea:focus{ /* agrega color de fondo al hacer focus */
 
 	.contacto{
 		margin: 0 auto;
+		display: block;
+	}
+
+	.contacto a{
+		display: block;
 	}
 
 	.formulario{
 		display: block;
 		margin: 0 auto;
 		width: 300px;
+	}
+
+	.sexo label{
+		display: block;
+	}
+
+	.formulario label{
+		font-size: 20px;
 	}
 
 	.intereses label{
@@ -469,6 +482,10 @@ input:focus, textarea:focus{ /* agrega color de fondo al hacer focus */
 
 	.col2{
 		margin-right: 25px;
+	}
+
+	input[type="text"]{
+		margin-bottom: 25px;
 	}
 
 	/*selector de atributo*/

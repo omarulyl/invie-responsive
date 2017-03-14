@@ -337,10 +337,24 @@ input:focus, textarea:focus{ /* agrega color de fondo al hacer focus */
 	display: inline-block;
 	text-align: center;
 	cursor: pointer;
-	position: absolute;
+	position: fixed; /*menu permanece visible en toda la pagina*/
 	left: 20px;
 	top: 20px;
+	color: white;
 	z-index: 3;
+	display: none;
+}
+
+.video-demo{
+	max-width: 500px;
+	width: 100%;
+	border: 5px solid #3c5b6e;
+}
+
+.video-demo-contenedor{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 80px
 }
 
 /*Segunda forma de agregar media queries */
@@ -354,6 +368,15 @@ input:focus, textarea:focus{ /* agrega color de fondo al hacer focus */
 		border: 10px solid red;
 	}*/
 	/* Portada */
+	/*precios */
+	.tabla{
+		margin: 50px 20px;
+	}
+	.tabla .contenedor{
+		overflow: auto;
+		border: 1px solid #273b47;
+	}
+	/*precios */
 	.titulo{
 		font-size: 45px;
 		margin-top: 30px;
@@ -374,6 +397,9 @@ input:focus, textarea:focus{ /* agrega color de fondo al hacer focus */
 	/* Portada */
 
 	/*Guitarras*/
+	.video-demo-contenedor{
+		margin-bottom: 30px;
+	}
 	.guitarras{
 		/*border: 1px solid red;*/
 		text-align: center;
@@ -491,19 +517,45 @@ input:focus, textarea:focus{ /* agrega color de fondo al hacer focus */
 		padding: 0;
 	}
 
+	/*Guitarras*/
+/*	.video-demo{
+		margin: 0 10px; 
+	}*/
+	/*Guitarras*/
+
 
 }
 
 @media screen and (max-width: 500px){
+	
+	.portada .button{
+		display: block;
+	}
+	
 	/* Portada */
+	.precios .header .logotipo{
+		margin:  50px 0;
+	}
+	.burguer-button{
+		display: block; /*se muestra el boton*/
+	}
 	.portada .contenedor{
 		position: static;
+	}
+
+	.header{
+		position: static;
+	}
+
+	.header .contenedor{
+		position: static;
+
 	}
 
 	.menu{
 		
 		background: rgba(255, 60, 88, .8);
-		position: absolute;
+		position: fixed;/*posision fixed = siempre en la pantalla*/
 		left: -100%;
 		top: 0;
 		z-index: 2;
@@ -553,7 +605,16 @@ input:focus, textarea:focus{ /* agrega color de fondo al hacer focus */
 	.guitarra img{
 		width: 200px;
 	}
+
+	.video-demo-contenedor{
+		margin: 0 10px 30px 10px ; 
+	}
 	/*Guitarras*/
+	/*Footer*/
+	.col2{
+		align-items: stretch;
+	}
+	/*Footer*/
 
 }
 /*
